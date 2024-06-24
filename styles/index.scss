@@ -1,0 +1,52 @@
+@font-face {
+	font-family: "Suisse Intl";
+	src: url(../assets/font/suisse.woff2) format("WOFF2");
+}
+
+@font-face {
+	font-family: "Unison";
+	src: url(../assets/font/unison.otf) format("opentype");
+}
+
+* {
+	font-family: "Suisse Intl", sans-serif;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #000000 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border-radius: 10px;
+	border: 4px none #ffffff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.font-bold {
+	font-family: "unison", sans-serif;
+}
+
+button {
+	cursor: pointer;
+}

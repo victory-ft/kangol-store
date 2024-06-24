@@ -1,0 +1,65 @@
+.about-page {
+	margin: 0 40px;
+}
+
+.who-we-are {
+	margin: 10px auto 50px;
+	max-width: 1500px;
+}
+
+.timeline {
+	width: 100%;
+}
+
+.timeline-item {
+	border-top: 2px solid #333;
+	text-transform: uppercase;
+
+	&:last-child {
+		border-bottom: 2px solid #333;
+	}
+
+	.timeline-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		background-color: transparent;
+		border: none;
+		font-size: 1rem;
+
+		h4 {
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 40px;
+		}
+	}
+
+	.timeline-body {
+		position: relative;
+		width: 100%;
+		font-weight: 600;
+		display: none;
+		place-content: center;
+
+		&.show {
+			display: grid;
+		}
+
+		img {
+			border: 2px solid #333;
+			border-radius: 20px;
+			width: 800px;
+			object-fit: cover;
+			margin: 10px auto;
+		}
+
+		p {
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+	}
+}
