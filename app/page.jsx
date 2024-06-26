@@ -179,7 +179,7 @@ export default async function Home() {
 
 			<Suspense fallback={<div>Loading...</div>}>
 				<section className="sale">
-					<SaleItems filteredItems={filteredItems} />
+					<SaleItems filteredItems={filteredItems} name="SALE" />
 				</section>
 			</Suspense>
 
@@ -223,7 +223,7 @@ export default async function Home() {
 					</div>
 				</div>
 
-				<div className="more-shapes">
+				{/* <div className="more-shapes">
 					<div className="list-links">
 						<h3>MORE ACCESSORIES</h3>
 						<button>
@@ -261,7 +261,7 @@ export default async function Home() {
 						<p className="product-name">perfect jogger</p>
 						<p className="product-price">$150.00</p>
 					</div>
-				</div>
+				</div> */}
 			</section>
 		</main>
 	);

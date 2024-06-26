@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 
-const SaleItems = ({ filteredItems }) => {
+const SaleItems = ({ filteredItems, name }) => {
 	const ref = useRef();
 
 	const scroll = (direction) => {
@@ -17,7 +17,8 @@ const SaleItems = ({ filteredItems }) => {
 		<>
 			<div className="sale-header">
 				<h1 className="section-title">
-					<span>/</span>SALE
+					<span>/</span>
+					{name}
 				</h1>
 
 				<div className="btn-container">
@@ -40,7 +41,7 @@ const SaleItems = ({ filteredItems }) => {
 			<div className="sale-items" ref={ref}>
 				{filteredItems.map((item) => {
 					return (
-						<Link href="#" key={item._id}>
+						<Link href={`/item/${item._id}`} key={item._id}>
 							<div className="sale-item">
 								<div className="sale-img-container">
 									<img src={item.images[0]} alt={item.name} />

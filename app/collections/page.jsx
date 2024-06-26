@@ -44,7 +44,10 @@ const Collections = async () => {
 						A DROP INSPIRED STYLE BY MABEL'S STYLE AND PERSONALITY, FEATURING
 						THE ICONIC BUCKET HAT AND NEW KANGOL PIECES.
 					</h3>
-					<Link href="#" className="collection-item col-item-2">
+					<Link
+						href={`item/${collectionItems[0]._id}`}
+						className="collection-item col-item-2"
+					>
 						<img
 							src={collectionItems[0].images[0]}
 							alt={collectionItems[0].name}
@@ -54,7 +57,10 @@ const Collections = async () => {
 							${(Math.round(collectionItems[0].price * 100) / 100).toFixed(2)}
 						</p>
 					</Link>
-					<Link href="#" className="collection-item col-item-3">
+					<Link
+						href={`item/${collectionItems[1]._id}`}
+						className="collection-item col-item-3"
+					>
 						<img
 							src={collectionItems[1].images[0]}
 							alt={collectionItems[1].name}
@@ -64,7 +70,10 @@ const Collections = async () => {
 							${(Math.round(collectionItems[1].price * 100) / 100).toFixed(2)}
 						</p>
 					</Link>
-					<Link href="#" className="collection-item col-item-4">
+					<Link
+						href={`item/${collectionItems[2]._id}`}
+						className="collection-item col-item-4"
+					>
 						<img
 							src={collectionItems[2].images[0]}
 							alt={collectionItems[2].name}
@@ -74,7 +83,10 @@ const Collections = async () => {
 							${(Math.round(collectionItems[2].price * 100) / 100).toFixed(2)}
 						</p>
 					</Link>
-					<Link href="#" className="collection-item col-item-5">
+					<Link
+						href={`item/${collectionItems[3]._id}`}
+						className="collection-item col-item-5"
+					>
 						<img
 							src={collectionItems[3].images[0]}
 							alt={collectionItems[3].name}
@@ -84,7 +96,10 @@ const Collections = async () => {
 							${(Math.round(collectionItems[3].price * 100) / 100).toFixed(2)}
 						</p>
 					</Link>
-					<Link href="#" className="collection-item col-item-6">
+					<Link
+						href={`item/${collectionItems[3]._id}`}
+						className="collection-item col-item-6"
+					>
 						<img
 							src={collectionItems[3].images[1]}
 							alt={collectionItems[3].name}
@@ -96,7 +111,10 @@ const Collections = async () => {
 						ICON AND REPRESENTS HER SELF-MADE GENERATION.
 					</h4>
 
-					<Link href="#" className="collection-item col-item-8">
+					<Link
+						href={`item/${collectionItems[5]._id}`}
+						className="collection-item col-item-8"
+					>
 						<img
 							src={collectionItems[5].images[0]}
 							alt={collectionItems[5].name}
@@ -107,14 +125,20 @@ const Collections = async () => {
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-9">
+					<Link
+						href={`item/${collectionItems[4]._id}`}
+						className="collection-item col-item-9"
+					>
 						<img
 							src={collectionItems[4].images[0]}
 							alt={collectionItems[4].name}
 						/>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-10">
+					<Link
+						href={`item/${collectionItems[4]._id}`}
+						className="collection-item col-item-10"
+					>
 						<img
 							src={collectionItems[4].images[1]}
 							alt={collectionItems[4].name}
@@ -135,7 +159,10 @@ const Collections = async () => {
 
 					<h1 className="col-item-12">IT'S IMMEDIATELY IDENTIFIABLE. &copy;</h1>
 
-					<Link href="#" className="collection-item col-item-13">
+					<Link
+						href={`item/${collectionItems[6]._id}`}
+						className="collection-item col-item-13"
+					>
 						<img
 							src={collectionItems[6].images[0]}
 							alt={collectionItems[6].name}
@@ -146,7 +173,10 @@ const Collections = async () => {
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-14">
+					<Link
+						href={`item/${collectionItems[7]._id}`}
+						className="collection-item col-item-14"
+					>
 						<img
 							src={collectionItems[7].images[0]}
 							alt={collectionItems[7].name}
@@ -157,7 +187,10 @@ const Collections = async () => {
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-15">
+					<Link
+						href={`item/${collectionItems[8]._id}`}
+						className="collection-item col-item-15"
+					>
 						<img
 							src={collectionItems[8].images[0]}
 							alt={collectionItems[8].name}
@@ -168,18 +201,24 @@ const Collections = async () => {
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-16">
+					<Link
+						href={`item/${collectionItems[9]._id}`}
+						className="collection-item col-item-16"
+					>
 						<img
 							src={collectionItems[9].images[0]}
 							alt={collectionItems[9].name}
 						/>
-						<p className="product-name">{collectionItems[8].name}</p>
+						<p className="product-name">{collectionItems[9].name}</p>
 						<p className="product-price">
-							${(Math.round(collectionItems[8].price * 100) / 100).toFixed(2)}
+							${(Math.round(collectionItems[9].price * 100) / 100).toFixed(2)}
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-17">
+					<Link
+						href={`item/${collectionItems[10]._id}`}
+						className="collection-item col-item-17"
+					>
 						<img
 							src={collectionItems[10].images[0]}
 							alt={collectionItems[10].name}
@@ -195,7 +234,10 @@ const Collections = async () => {
 						OF FRESH UPDATES ON STREETWEAR STYLE
 					</h4>
 
-					<Link href="#" className="collection-item col-item-19">
+					<Link
+						href={`item/${collectionItems[11]._id}`}
+						className="collection-item col-item-19"
+					>
 						<img
 							src={collectionItems[11].images[0]}
 							alt={collectionItems[11].name}
@@ -206,14 +248,20 @@ const Collections = async () => {
 						</p>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-20">
+					<Link
+						href={`item/${collectionItems[11]._id}`}
+						className="collection-item col-item-20"
+					>
 						<img
 							src={collectionItems[11].images[2]}
 							alt={collectionItems[11].name}
 						/>
 					</Link>
 
-					<Link href="#" className="collection-item col-item-21">
+					<Link
+						href={`item/${collectionItems[12]._id}`}
+						className="collection-item col-item-21"
+					>
 						<img
 							src={collectionItems[12].images[0]}
 							alt={collectionItems[12].name}

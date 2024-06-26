@@ -7,7 +7,7 @@ const Navbar = () => {
 		<nav className="main-nav">
 			<div className="header">
 				<Link href="/">
-					<img src="logo.svg" alt="kangol" />
+					<img src="/logo.svg" alt="kangol" />
 				</Link>
 				<h4>kangol store</h4>
 				<h4>t: 1-866-8-6465</h4>

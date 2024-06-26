@@ -10,7 +10,13 @@ const CatalogItem = ({ item }) => {
 				<p className="product-name">
 					<span className="grey-title">RATING:</span> 4.5/5.0
 				</p>
-				<img src={item.images[0]} alt={item.name} />
+				<img
+					src={item.images[0].replace(
+						"/upload/",
+						"/upload/e_make_transparent/",
+					)}
+					alt={item.name}
+				/>
 			</div>
 			<p className="product-name">{item.name}</p>
 			<p className="product-price">
