@@ -10,12 +10,12 @@
 	display: none;
 
 	button {
-		border: 3px solid #efefef;
+		border: 2px solid #efefef;
 		border-right: none;
 		border-left: none;
 
 		&:first-child {
-			border-right: 3px solid #efefef;
+			border-right: 2px solid #efefef;
 		}
 	}
 }

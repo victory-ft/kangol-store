@@ -6,6 +6,8 @@ import SaleItems from "@/components/SaleItems";
 import "@/styles/page.scss";
 import "@/styles/collection.scss";
 import "@/styles/product.scss";
+import "@/styles/mobile/product.scss";
+import "@/styles/mobile/page.scss";
 
 const ItemPage = async ({ params: { id } }) => {
 	const getItem = async () => {
@@ -84,6 +86,7 @@ const ItemPage = async ({ params: { id } }) => {
 					<h4>DETAILS:</h4>
 				</div>
 				<div className="product-detail">
+					<h4>DETAILS:</h4>
 					<p>
 						<span>SHAPE:</span> BUCKET
 					</p>

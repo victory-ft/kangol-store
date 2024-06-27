@@ -46,7 +46,7 @@ const Clothing = async () => {
 					</button>
 				</div>
 				<div className="catalog-items">
-					{saleItems.map((item) => {
+					{filteredItems.map((item) => {
 						return <CatalogItem item={item} />;
 					})}
 				</div>

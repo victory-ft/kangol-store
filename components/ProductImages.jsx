@@ -1,6 +1,5 @@
 "use client";
-import React, { useRef } from "react";
-import Link from "next/link";
+import React from "react";
 import { useOverflowDetector } from "react-detectable-overflow";
 
 const ProductImages = ({ images, name }) => {
@@ -17,10 +16,6 @@ const ProductImages = ({ images, name }) => {
 	return (
 		<>
 			<div className="sale-header product">
-				{/* <h1 className="section-title">
-					<span>/</span>images
-				</h1> */}
-
 				{overflow && (
 					<div className="btn-container">
 						<button onClick={() => scroll("left")}>
