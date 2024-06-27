@@ -1,8 +1,9 @@
 import React from "react";
-import "@/styles/page.scss";
-import "@/styles/catalog.scss";
 import CatalogItem from "@/components/CatalogItem";
 import Filters from "@/components/Filters";
+import "@/styles/page.scss";
+import "@/styles/mobile/catalog.scss";
+import "@/styles/catalog.scss";
 
 const getClothData = async () => {
 	const response = await fetch("http://localhost:3000/api/items");
@@ -23,6 +24,21 @@ const Bottoms = async () => {
 	return (
 		<main className="catalog-page-container">
 			<section className="catalog-page">
+				<h1 className="section-title mobile-only">
+					<span>/</span>
+					{style || "HATS"}
+				</h1>
+
+				<div className="top-links mobile-only">
+					<button>
+						<h2>SORT BY</h2>
+						<img src="/icons/arrow-right-up.svg" alt="arrow" />
+					</button>
+					<button>
+						<h2>FILTERS</h2>
+						<img src="/icons/arrow-right-up.svg" alt="arrow" />
+					</button>
+				</div>
 				<div className="catalog-items">
 					{filteredItems.map((item) => {
 						return <CatalogItem item={item} />;

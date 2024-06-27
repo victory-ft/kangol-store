@@ -1,0 +1,210 @@
+@media only screen and (max-width: 1000px) {
+	.product-grid {
+		display: flex;
+		overflow-x: auto;
+		height: 450px;
+
+		img {
+			width: 100%;
+			height: 80%;
+			width: 400px;
+			margin: 0;
+			object-fit: cover;
+		}
+
+		.product-2 {
+			img {
+				object-fit: cover;
+			}
+		}
+
+		.list-links {
+			align-self: start;
+			min-width: 350px;
+		}
+	}
+
+	.iconic-shapes {
+		margin: 50px 40px 50px;
+	}
+
+	.shapes-items {
+		grid-template-columns: repeat(3, 1fr);
+
+		h3 {
+			grid-column: 1 / 3;
+			font-size: 1.1rem;
+		}
+
+		.shapes-2 {
+			grid-column: 3 / 4;
+			width: 100%;
+		}
+	}
+
+	.shapes-wrapper {
+		p {
+			font-size: 0.9rem;
+			span {
+				font-size: 1.5rem;
+				margin-right: 10px;
+			}
+		}
+
+		&.shapes-2 {
+			p {
+				margin-left: unset;
+				width: 100%;
+			}
+		}
+	}
+
+	.shapes-img-cont {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	.more-shapes {
+		display: flex;
+		flex-direction: column;
+		margin-top: 40px;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			max-width: 300px;
+			max-height: 300px;
+			object-fit: cover;
+		}
+
+		.list-links {
+			margin: 1px auto;
+			width: 100%;
+			align-self: unset;
+		}
+
+		.more-1 {
+			margin: 10px auto;
+		}
+
+		.more-2 {
+			margin: 10px auto;
+		}
+	}
+
+	.clothing-grid {
+		grid-template-columns: repeat(4, 1fr);
+
+		.cloth-1 {
+			grid-column: span 1;
+			grid-row: unset;
+			height: 100%;
+			justify-self: start;
+
+			img {
+				height: 75%;
+			}
+		}
+
+		.cloth-2 {
+			grid-column: 3 / 5;
+			grid-row: span 2;
+		}
+
+		.cloth-3 {
+			height: 100%;
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+
+			img {
+				height: 75%;
+			}
+		}
+
+		.cloth-4 {
+			// display: none;
+			grid-column: 1 / 3;
+			// grid-row: span 2;
+			justify-self: stretch;
+			align-self: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header-container {
+		padding: 10px;
+		h1 {
+			font-size: 1.6rem;
+		}
+	}
+
+	.section-title {
+		font-size: 1.8rem;
+
+		&.pop {
+			padding: 0 10px;
+		}
+
+		span {
+			margin-right: 50px;
+		}
+	}
+
+	.popular-products {
+		margin: 0 10px;
+	}
+
+	.iconic-shapes,
+	.sale,
+	.clothing {
+		margin: 50px 10px;
+	}
+
+	.shapes-items {
+		display: flex;
+		flex-direction: column;
+
+		img {
+			object-fit: cover;
+			height: 400px;
+		}
+
+		.shapes-img-cont {
+			h1 {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.top-links {
+		button {
+			h2 {
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.product-grid {
+		img {
+			width: 300px;
+		}
+
+		.list-links {
+			min-width: 350px;
+		}
+	}
+
+	.sale-header {
+		.btn-container {
+			margin: 10px;
+
+			button {
+				width: 60px;
+			}
+		}
+	}
+}

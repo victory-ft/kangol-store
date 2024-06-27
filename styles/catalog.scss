@@ -2,6 +2,24 @@
 	margin: 40px;
 }
 
+.section-title.mobile-only {
+	display: none;
+}
+
+.top-links.mobile-only {
+	display: none;
+
+	button {
+		border: 3px solid #efefef;
+		border-right: none;
+		border-left: none;
+
+		&:first-child {
+			border-right: 3px solid #efefef;
+		}
+	}
+}
+
 .catalog-page {
 	display: grid;
 	grid-template-columns: 3fr 1fr;

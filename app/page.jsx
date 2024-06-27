@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import SaleItems from "@/components/SaleItems";
 import "@/styles/page.scss";
+import "@/styles/mobile/page.scss";
 
 const getHatData = async () => {
 	const response = await fetch("http://localhost:3000/api/items");
@@ -223,7 +224,7 @@ export default async function Home() {
 					</div>
 				</div>
 
-				{/* <div className="more-shapes">
+				<div className="more-shapes">
 					<div className="list-links">
 						<h3>MORE ACCESSORIES</h3>
 						<button>
@@ -261,7 +262,7 @@ export default async function Home() {
 						<p className="product-name">perfect jogger</p>
 						<p className="product-price">$150.00</p>
 					</div>
-				</div> */}
+				</div>
 			</section>
 		</main>
 	);

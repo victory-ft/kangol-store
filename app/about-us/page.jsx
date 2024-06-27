@@ -22,8 +22,6 @@ const AboutUs = () => {
 		}));
 	};
 
-	console.log(showTimeline);
-
 	return (
 		<main className="about-page">
 			<section className="who-we-are">

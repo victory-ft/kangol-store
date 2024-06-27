@@ -63,3 +63,29 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 900px) {
+	.about-page {
+		margin: 0 10px;
+	}
+
+	.timeline-header {
+		color: #000;
+	}
+
+	.timeline-item {
+		.timeline-body {
+			font-weight: 500;
+			img {
+				width: 90vw;
+			}
+
+			p {
+				margin: none;
+				padding-left: 10px;
+				padding-right: 10px;
+				width: unset;
+			}
+		}
+	}
+}

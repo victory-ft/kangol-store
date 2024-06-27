@@ -10,6 +10,12 @@
 
 * {
 	font-family: "Suisse Intl", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	html {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+	}
 }
 
 /* Firefox */
