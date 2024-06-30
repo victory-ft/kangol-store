@@ -115,6 +115,7 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</nav>
+
 			<MobileNav />
 		</>
 	);
