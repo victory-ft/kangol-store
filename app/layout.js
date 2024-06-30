@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Lato } from "next/font/google";
 import "@/styles/index.scss";
 
 export const metadata = {
@@ -10,12 +11,14 @@ export const metadata = {
 	},
 };
 
+const lato = Lato({ weight: "400", subsets: ["latin"] });
+
 export const dynamic = "force-dynamic";
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<body className={lato.className}>
 				<Navbar />
 				{children}
 				<Footer />
