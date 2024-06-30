@@ -6,7 +6,7 @@ import "@/styles/mobile/catalog.scss";
 import "@/styles/catalog.scss";
 
 const getClothData = async () => {
-	const response = await fetch(`${process.env.API_URL}/api/items`);
+	const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/items`);
 
 	if (!response.ok) {
 		throw new Error("Failed to get data");

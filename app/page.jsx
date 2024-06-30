@@ -7,9 +7,7 @@ import "@/styles/page.scss";
 import "@/styles/mobile/page.scss";
 
 const getHatData = async () => {
-	const response = await fetch(`${process.env.API_URL}/api/items`);
-	console.log(`${process.env.API_URL}/api/items`);
-
+	const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/items`);
 	if (!response.ok) {
 		throw new Error("Failed to get data");
 	}

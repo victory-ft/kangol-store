@@ -11,7 +11,9 @@ import "@/styles/mobile/page.scss";
 
 const ItemPage = async ({ params: { id } }) => {
 	const getItem = async () => {
-		const response = await fetch(`http://localhost:3000/api/items/${id}`);
+		const response = await fetch(
+			`${process.env.NEXT_PUBLIC_API_DOMAIN}/items/${id}`,
+		);
 
 		if (!response.ok) {
 			throw new Error("Failed to get data");
@@ -23,7 +25,7 @@ const ItemPage = async ({ params: { id } }) => {
 	const item = await getItem();
 
 	const getHatData = async () => {
-		const response = await fetch(`${process.env.API_URL}/api/items`);
+		const response = await fetch(`${process.env.NEXT_PUBLIC_API_DOMAIN}/items`);
 
 		if (!response.ok) {
 			throw new Error("Failed to get data");
