@@ -5,7 +5,7 @@ import "@/styles/collection.scss";
 import "@/styles/mobile/collection.scss";
 
 const getCollectionItems = async () => {
-	const response = await fetch("http://localhost:3000/api/items");
+	const response = await fetch(`${process.env.API_URL}/api/items`);
 
 	if (!response.ok) {
 		throw new Error("Failed to get data");

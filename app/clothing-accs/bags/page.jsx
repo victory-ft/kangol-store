@@ -6,7 +6,7 @@ import "@/styles/mobile/catalog.scss";
 import "@/styles/catalog.scss";
 
 const getBagData = async () => {
-	const response = await fetch("http://localhost:3000/api/items");
+	const response = await fetch(`${process.env.API_URL}/api/items`);
 
 	if (!response.ok) {
 		throw new Error("Failed to get data");

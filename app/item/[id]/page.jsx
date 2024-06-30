@@ -23,7 +23,7 @@ const ItemPage = async ({ params: { id } }) => {
 	const item = await getItem();
 
 	const getHatData = async () => {
-		const response = await fetch("http://localhost:3000/api/items");
+		const response = await fetch(`${process.env.API_URL}/api/items`);
 
 		if (!response.ok) {
 			throw new Error("Failed to get data");
