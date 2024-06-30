@@ -1,21 +1,14 @@
-@font-face {
-	font-family: "Suisse Intl";
-	src: url(../assets/font/suisse.woff2) format("WOFF2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
 
 @font-face {
 	font-family: "Unison";
-	src: url(../assets/font/unison.otf) format("opentype");
+	src: url("/assets/font/unison.otf") format("opentype");
 }
 
 * {
-	font-family: "Suisse Intl", sans-serif;
-	-webkit-font-smoothing: antialiased;
-	html {
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		font-smoothing: antialiased;
-	}
+	font-family: "Lato", sans-serif;
 }
 
 /* Firefox */
@@ -50,7 +43,7 @@ body {
 }
 
 .font-bold {
-	font-family: "unison", sans-serif;
+	font-family: "Syncopate", sans-serif;
 }
 
 button {

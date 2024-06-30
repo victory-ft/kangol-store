@@ -40,8 +40,8 @@ const Hats = async ({ searchParams }) => {
 					</button>
 				</div>
 				<div className="catalog-items">
-					{filteredItems.map((item) => {
-						return <CatalogItem item={item} />;
+					{filteredItems.map((item, index) => {
+						return <CatalogItem item={item} key={index} />;
 					})}
 				</div>
 				<Filters style={style} />

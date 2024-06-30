@@ -26,6 +26,10 @@
 			}
 		}
 
+		.logo-image {
+			width: 40px;
+		}
+
 		button {
 			background-color: white;
 			border: none;
@@ -132,7 +136,6 @@
 		left: -100%;
 		transition: 0.3s left ease-in-out;
 		&.show {
-			display: flex;
 			left: 0;
 		}
 

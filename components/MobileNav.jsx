@@ -24,6 +24,11 @@ const MobileNav = () => {
 		});
 	};
 
+	const showMenuFunc = () => {
+		showMenu(false);
+		document.body.style.overflow = "unset";
+	};
+
 	const subMenuClick = (key) => {
 		showSubMenu((prev) => ({
 			...prev,
@@ -57,9 +62,12 @@ const MobileNav = () => {
 					</svg>
 				</button>
 
-				<h4>
-					<Link href="/">kangol store</Link>
-				</h4>
+				{/* <h4> */}
+				<Link href="/" onClick={showMenuFunc} className="logo-image">
+					{/* kangol store */}
+					<img src="/logo.svg" alt="logo" />
+				</Link>
+				{/* </h4> */}
 				<div className="store-btns">
 					<button className="store-btn">
 						<img src="/icons/search.svg" alt="search" />
