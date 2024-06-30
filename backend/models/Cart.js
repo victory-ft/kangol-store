@@ -37,6 +37,6 @@ const cartSchema = new Schema(
 	},
 );
 
-const Cart = models.Cart || model("Cart", CartSchema);
+const Cart = models.Cart || model("Cart", cartSchema);
 
 export default Cart;
