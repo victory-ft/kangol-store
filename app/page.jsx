@@ -1,8 +1,8 @@
-"use server";
 import { Suspense } from "react";
 import Link from "next/link";
 import SaleItems from "@/components/SaleItems";
 import Button from "@/components/Button";
+import { Syncopate } from "next/font/google";
 import "@/styles/page.scss";
 import "@/styles/mobile/page.scss";
 
@@ -15,10 +15,11 @@ const getHatData = async () => {
 	return response.json();
 };
 
+const syncopate = Syncopate({ weight: "400", subsets: ["latin"] });
+
 export default async function Home() {
 	const saleItems = await getHatData();
 	const filteredItems = saleItems.filter((item) => item.category === "hat");
-
 	return (
 		<main className="home-page">
 			<div className="header-container">
@@ -178,7 +179,7 @@ export default async function Home() {
 							src="https://m.media-amazon.com/images/I/61y5KRe3U0L._AC_SX679_.jpg"
 							alt="504"
 						/>
-						<h1 className="uppercase font-bold">507's</h1>
+						<h1 className={` uppercase font-bold`}>507's</h1>
 					</Link>
 				</div>
 			</section>
