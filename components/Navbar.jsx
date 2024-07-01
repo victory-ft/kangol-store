@@ -99,10 +99,10 @@ const Navbar = () => {
 						<img src="/icons/arrow-down.svg" alt="arrow" />
 					</li>
 					<li>
-						<Link href="/">Lookbook</Link>
+						<Link href="/about-us">About</Link>
 					</li>
 					<li>
-						<Link href="/about-us">About</Link>
+						<Link href="/">Victory</Link>
 					</li>
 					<li className="special">
 						<div className="search-container">

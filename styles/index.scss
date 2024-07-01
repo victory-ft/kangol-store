@@ -14,7 +14,7 @@
 /* Firefox */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: #000000 #ffffff;
+	scrollbar-color: #000 #fff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -47,5 +47,6 @@ body {
 }
 
 button {
+	font-family: "Lato", sans-serif;
 	cursor: pointer;
 }
