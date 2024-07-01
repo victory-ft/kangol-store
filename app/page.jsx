@@ -20,6 +20,8 @@ const syncopate = Syncopate({ weight: "400", subsets: ["latin"] });
 export default async function Home() {
 	const saleItems = await getHatData();
 	const filteredItems = saleItems.filter((item) => item.category === "hat");
+	const bags = saleItems.filter((item) => item.category === "bag");
+
 	return (
 		<main className="home-page">
 			<div className="header-container">
@@ -76,26 +78,17 @@ export default async function Home() {
 					</div>
 					<div className="product-4 list-links">
 						<h3>MORE PRODUCTS</h3>
-						<button>
-							<p>USA WOOL 504</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>WASHED BUCKET HAT</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>WOOL FLEXIFIT BASEBALL</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>STRIPE LAHINCH</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-
-						<button className="special">
+						{filteredItems.slice(0, 4).map((item, index) => {
+							return (
+								<Link href={`/item/${item._id}`} key={index}>
+									<p className="uppercase">{item.name}</p>
+									<img src="/icons/arrow-right-up.svg" alt="arrow" />
+								</Link>
+							);
+						})}
+						<Link href="/hats" className="special">
 							<p>CHECK ALL THE STUFF</p>
-						</button>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -148,22 +141,22 @@ export default async function Home() {
 				<div className="more-shapes">
 					<div className="list-links">
 						<h3>OTHER KANGOL SHAPES</h3>
-						<button>
+						<Link href="/hats">
 							<p>ARMY CAPS</p>
 							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
+						</Link>
+						<Link href="/hats">
 							<p>PORK PIES</p>
 							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
+						</Link>
+						<Link href="/hats">
 							<p>SPACECAPS</p>
 							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
+						</Link>
+						<Link href="/hats">
 							<p>TRAPPERS</p>
 							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
+						</Link>
 					</div>
 
 					<Link href="/hats" className="shapes-img-cont more-1">
@@ -233,22 +226,17 @@ export default async function Home() {
 				<div className="more-shapes">
 					<div className="list-links">
 						<h3>MORE ACCESSORIES</h3>
-						<button>
-							<p>TESSA BUCKET BAG</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>POP COLOR CANVAS POUCH</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>KEEPER V-SLING BAG</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
-						<button>
-							<p>PLUSH ROUND WRISTLET</p>
-							<img src="/icons/arrow-right-up.svg" alt="arrow" />
-						</button>
+						{bags.slice(0, 4).map((item, index) => {
+							return (
+								<Link href={`/item/${item._id}`} key={index}>
+									<p className="uppercase">{item.name}</p>
+									<img src="/icons/arrow-right-up.svg" alt="arrow" />
+								</Link>
+							);
+						})}
+						<Link href="/clothing-accs" className="special">
+							<p>SEE MORE STUFF</p>
+						</Link>
 					</div>
 
 					<Link href="/clothing-accs" className="shapes-img-cont more-1">

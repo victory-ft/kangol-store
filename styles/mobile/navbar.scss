@@ -135,6 +135,7 @@
 		overflow-y: auto;
 		left: -100%;
 		transition: 0.3s left ease-in-out;
+
 		&.show {
 			left: 0;
 		}
@@ -158,7 +159,7 @@
 		}
 
 		.about-li {
-			padding-top: 10px;
+			padding: 20px 0;
 			.about-btn {
 				font-size: 1.7rem;
 				padding: 20px 0;

@@ -12,7 +12,9 @@ const Navbar = () => {
 					<Link href="/">
 						<img src="/logo.svg" alt="kangol" />
 					</Link>
-					<h4>kangol store</h4>
+					<h4>
+						<Link href="/">kangol store</Link>
+					</h4>
 					<h4>t: 1-866-8-6465</h4>
 					<h4>usa</h4>
 					<h4>account</h4>
@@ -102,7 +104,7 @@ const Navbar = () => {
 						<Link href="/about-us">About</Link>
 					</li>
 					<li>
-						<Link href="/">Victory</Link>
+						<Link href="/victory">Victory</Link>
 					</li>
 					<li className="special">
 						<div className="search-container">

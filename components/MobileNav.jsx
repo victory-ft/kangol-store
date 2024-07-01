@@ -206,8 +206,13 @@ const MobileNav = () => {
 				</li>
 
 				<li className="about-li">
-					<Link href="/about-us" className="about-btn">
+					<Link href="/about-us" className="about-btn" onClick={menuClick}>
 						About
+					</Link>
+				</li>
+				<li className="about-li">
+					<Link href="/victory" className="about-btn" onClick={menuClick}>
+						Victory
 					</Link>
 				</li>
 			</ul>
