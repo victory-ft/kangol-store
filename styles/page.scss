@@ -125,7 +125,7 @@ a {
 	text-transform: uppercase;
 	margin: 5px 0;
 	// font-weight: 600;
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 }
 
 .product-price {
@@ -377,6 +377,12 @@ a {
 	flex-direction: column;
 	justify-content: space-between;
 
+	&:hover {
+		img {
+			scale: 1.05;
+		}
+	}
+
 	.product-name,
 	.product-price {
 		font-size: 0.86rem;
@@ -391,6 +397,7 @@ a {
 		height: 200px;
 		width: 200px;
 		padding: 40px;
+		transition: scale 0.5s ease-in-out;
 		// outline: 3px solid #f2f2f2;
 	}
 }
