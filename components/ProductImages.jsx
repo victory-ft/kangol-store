@@ -1,5 +1,6 @@
 "use client";
-import React from "react";
+import Image from "next/image";
+import React, { useState } from "react";
 import { useOverflowDetector } from "react-detectable-overflow";
 
 const ProductImages = ({ images, name }) => {
@@ -12,6 +13,7 @@ const ProductImages = ({ images, name }) => {
 			ref.current.scrollLeft -= 480;
 		}
 	};
+	const [isImageLoading, setImageLoading] = React.useState(true);
 
 	return (
 		<>
@@ -42,9 +44,14 @@ const ProductImages = ({ images, name }) => {
 							<div className="product-images" key={index}>
 								<div className="product-image">
 									{/* <img src={itemImage} alt={name} /> */}
-									<img
+									<Image
 										src={itemImage.replace("/upload/", "/upload/e_bgremoval/")}
 										alt={name}
+										onLoad={() => setImageLoading(false)}
+										className={`${isImageLoading ? "" : "loaded"}`}
+										width={0}
+										height={0}
+										sizes="100vw"
 									/>
 								</div>
 							</div>

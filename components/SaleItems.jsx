@@ -1,6 +1,7 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const SaleItems = ({ filteredItems, name }) => {
 	const ref = useRef();
@@ -12,6 +13,7 @@ const SaleItems = ({ filteredItems, name }) => {
 			ref.current.scrollLeft -= 480;
 		}
 	};
+	const [isImageLoading, setImageLoading] = React.useState(true);
 
 	return (
 		<>
@@ -44,7 +46,15 @@ const SaleItems = ({ filteredItems, name }) => {
 						<Link href={`/item/${item._id}`} key={item._id}>
 							<div className="sale-item">
 								<div className="sale-img-container">
-									<img src={item.images[0]} alt={item.name} />
+									<Image
+										src={item.images[0]}
+										alt={item.name}
+										onLoad={() => setImageLoading(false)}
+										className={`${isImageLoading ? "" : "loaded"}`}
+										width={0}
+										height={0}
+										sizes="100vw"
+									/>
 								</div>
 								<div>
 									<p className="product-name">{item.name}</p>

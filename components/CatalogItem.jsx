@@ -1,20 +1,29 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import "@/styles/page.scss";
 import "@/styles/catalog.scss";
+import Image from "next/image";
 
 const CatalogItem = ({ item }) => {
+	const [isImageLoading, setImageLoading] = React.useState(true);
+
 	return (
 		<Link href={`/item/${item._id}`} className="catalog-item" key={item._id}>
 			<div className="catalog-img-wrapper">
 				<p className="product-name">
 					<span className="grey-title">RATING:</span> 4.5/5.0
 				</p>
-				<img
+				<Image
 					src={item.images[0].replace(
 						"/upload/",
 						"/upload/e_make_transparent/",
 					)}
+					onLoad={() => setImageLoading(false)}
+					className={`${isImageLoading ? "" : "loaded"}`}
+					width={0}
+					height={0}
+					sizes="100vw"
 					alt={item.name}
 				/>
 			</div>
