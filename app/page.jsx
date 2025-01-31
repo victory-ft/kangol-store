@@ -59,7 +59,7 @@ export default async function Home() {
 					<div className="product-2">
 						<Link href="/item/668046c1d4e2da23654a639e">
 							<img
-								src="https://www.kangol.com/media/wysiwyg/2Col-D-sustainable-styles.jpg"
+								src="https://res.cloudinary.com/victory-dev/image/upload/v1719682541/kangol/k3685-kangol-geo-board-bin-digital-lavender-1k_jxwond.jpg"
 								alt="product"
 							/>
 						</Link>
@@ -124,7 +124,7 @@ export default async function Home() {
 					<Link href="/hats" className="shapes-wrapper shapes-2">
 						<div className="shapes-img-cont">
 							<img
-								src="https://eu.kangol.com/media/catalog/product/k/a/kangol-anglobasque-beret-camel-av7.jpg?optimize=medium&fit=bounds&height=340&width=340&canvas=340:340"
+								src="https://kangol.com/cdn/shop/files/0252ht-darkblue-ls.jpg?v=1734383326&width=1200"
 								alt="casuals"
 							/>
 							<h1 className="uppercase font-bold">casuals</h1>
@@ -199,7 +199,7 @@ export default async function Home() {
 					</Link>
 					<Link href="/clothing-accs" className="cloth-img-wrapper cloth-2">
 						<img
-							src="https://cotwohk.com/cdn/shop/files/download_79120992-b168-4e55-a032-230159d98eb8_600x.jpg?v=1698384978"
+							src="https://res.cloudinary.com/victory-dev/image/upload/v1738343684/32678dc8f49506e1cdcba08fc6151ad4_600x_rsqfyg.webp"
 							alt="wallet"
 						/>
 						<p className="product-name">icon hoodie</p>
@@ -207,7 +207,7 @@ export default async function Home() {
 					</Link>
 					<Link href="/clothing-accs" className="cloth-img-wrapper cloth-3">
 						<img
-							src="https://www.kangol.com/media/catalog/product/e/b/eb0037-kangol-eco-friendly-bag-plus-tote-ivory-1_1.jpg?optimize=medium&fit=bounds&height=340&width=340&canvas=340:340"
+							src="https://res.cloudinary.com/victory-dev/image/upload/v1738343711/tb37830_li720_main_1_1_dqp5n0.jpg"
 							alt="wallet"
 						/>
 						<p className="product-name">casual shopper</p>
@@ -215,7 +215,7 @@ export default async function Home() {
 					</Link>
 					<Link href="/clothing-accs" className="cloth-img-wrapper cloth-4">
 						<img
-							src="https://www.kangol.com/media/catalog/product/k/3/k3504-kangol-face-mask-red_av7_1.jpg?optimize=medium&fit=bounds&height=340&width=340&canvas=340:340"
+							src="https://res.cloudinary.com/victory-dev/image/upload/v1738343734/k3504-kangol-face-mask-red_av7_1_xryuuk.jpg"
 							alt="wallet"
 						/>
 						<p className="product-name">kangol face mask</p>
